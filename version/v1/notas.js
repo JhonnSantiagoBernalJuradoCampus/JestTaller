@@ -6,7 +6,7 @@ diga "becado"
 export let nota = (n1,n2,n3) =>{
     const notas = [n1,n2,n3];
     //Validando si alguna nota es o menor 0 o mayor a 5 o es un string para pasar error
-    if(notas.some(nota=> nota<0 || nota>5 || typeof nota == "string")){
+    if(notas.some(nota=> nota<0 || nota>5 || typeof nota != "number")){
         return "Error"
     } else {
         const promedio = (n1+n2+n3)/3;
