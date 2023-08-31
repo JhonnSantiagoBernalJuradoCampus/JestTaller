@@ -5,7 +5,9 @@ export const voltaje= (corriente, resistencia)=>{
     if(datos.some(dato=> dato<0 || typeof dato != "number")){
         return "Error";
     }
-    const voltaje = (corriente*resistencia)
-    return `${voltaje} (V)`
-    alert(`El voltaje es ${voltaje} Voltios (V)`)
+    else{
+        const voltaje = (corriente*resistencia)
+    return voltaje
+    }
+    
 }
