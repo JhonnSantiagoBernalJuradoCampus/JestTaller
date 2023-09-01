@@ -6,6 +6,7 @@ describe("Determinar el voltaje a partir de la resistencia y la intensidad", ()=
         expect(typeof app).toBe("number")
     });
     test("El test debe devolver el Voltaje", ()=>{
-        
-    })
-})
+        const app = voltaje(10,2);
+        expect(app).toBe(20)
+    });
+});
